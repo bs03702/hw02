@@ -19,12 +19,13 @@
 \usepackage[table]{xcolor}
 \usepackage{amsfonts,graphicx,amsmath,hyperref}
 \title{Habib University\\CS-113 Discrete Mathematics\\Spring 2018\\HW 2}
-\author{$<your ID>$}  % replace with your ID, e.g. oy02945
+\author{$< bs 03702 >$}  % replace with your ID, e.g. oy02945
 \date{Due: 19h, 16th February, 2018}
 
 
 \begin{document}
 \maketitle
+
 
 \begin{questions}
 
@@ -37,7 +38,7 @@
 \begin{parts}
 
  
-  \part[5] Determine the domain, codomain and set of values for the following function to be 
+  \part[5] Determine the domain, co-domain and set of values for the following function to be 
   \begin{subparts}
   \subpart Partial
   \subpart Total
@@ -47,14 +48,31 @@
     $y=\sqrt{x}$
   \end{center}
 
-  \begin{solution}
-    % Write your solution here
+  \begin{solution} \newline
+     % Write your solution here
+    $$i) Partial _ Function:$$ \newline
+    \textbf{Domain }: \newline [0,$+\infty$) \newline 
+    $ \{x \in R \| x>= 0\}$  \newline
+    \textbf{Co-domain:} \newline Real Numbers \textit{R}    
+    \newline \textbf{Range:} \newline $[0,+\infty)$ \newline 
+    $\{y \in R \| y>=0\}$ \newline
+    $$ii) Total _ Function:$$ \newline
+    \textbf{Domain:}    \newline $ \{x \in R \}$
+    \newline
+    \textbf{Range}:  \newline Complex Numbers \newline 
+    If value of x is less 0 then $\{x \in C \|$ x is in the form of $+i\sqrt(-x)\}$  \newline
+   \textbf{Co-domain:} Complex Numbers \newline
+    
+   
   \end{solution}
   
   \part[5] Explain whether $f$ is a function from the set of all bit strings to the set of integers if $f(S)$ is the smallest $i \in \mathbb{Z}$� such that the $i$th bit of S is 1 and $f(S) = 0$ when S is the empty string. 
   
   \begin{solution}
     % Write your solution here
+    \newline
+    Not well-defined: Consider a string of all 0s. As this definition does not tell what to do with a nonempty string consisting of all 0's. Thus, for example,
+    f(000) is undefined. Therefore this is not a function.
   \end{solution}
 
   \part[15] For $X,Y \in S$, explain why (or why not) the following define an equivalence relation on $S$:
@@ -66,14 +84,66 @@
 
   \begin{solution}
     % Write your solution here
-  \end{solution}
+    \newline 1-  \newline
+   For i): \newline
+   \textbf{Reflexive} as if X=Y, then  $\forall $ x $\in$ S : x R x  \newline
+   \textbf{Symmetric} as If X is in a class with Y, Y would also be in the class with X.
+   \newline    $\forall $ X$\forall $Y $|$ (X,Y) $\in$ S $\wedge$ (Y,X) $\in$ S \newline
+   \textbf{Not Transitive} \newline 
+   $\forall$ X,Y,Z $\in$ S $|$ ((X,Y) $\in$ S  $\wedge$ (Y,Z) $\in$ S)  does not mean that X and Z are also in one class.
+   \newline 
+   As a result this is not an Equivalence Relation.
+   \newline
+   \newline For 2): \newline
+   \textbf{Reflexive} as if X=Y, then  $\forall $ x $\in$ S : x R x  \newline
+   \textbf{Symmetric} as If X rhymes with Y, Y would also rhyme with X.
+   \newline    $\forall $ x$\forall $Y $|$ (X,Y) $\in$ S $\wedge$ (Y,X) $\in$ S \newline
+   \textbf{Transitive} \newline 
+   $\forall$ X,Y,Z $\in$ S $|$ ((X,Y) $\in$ S  $\wedge$ (Y,Z) $\in$ S) $\rightarrow$ (X,Z) \newline
+   If X rhymes with Y and Y rhymes with Z, then X must also Rhyme with Z.
+   \newline Thus, It is an equivalence relation.
+    \newline
+   \newline For 3):\newline
+   If X and Y are sets and every element of X is also an element of Y and X=Y then,
+   \newline 
+   \textbf{Reflexive} as if X=Y, then  $\forall $ x $\in$ S : x R x  \newline
+   \textbf{Symmetric} as If X is subset of Y, Y is also the subset of of X.
+   \newline     $\forall $ X$\forall $Y $|$ (X,Y) $\in$ S $\wedge$ (Y,X) $\in$ S \newline
+   \textbf{Transitive} \newline 
+   $\forall$ X,Y,Z $\in$ S $|$ ((X,Y) $\in$ S  $\wedge$ (Y,Z) $\in$ S) $\rightarrow$ (X,Z)
+   \newline Thus, It is an equivalence relation.
+   \newline
+   \newline
+   \newline For 3): \newline   
+    If X is a subset of Y, but X is not equal to Y (i.e. there exists at least one element of Y which is not an element of X) \newline 
+   \textbf{Reflexive} as if X=Y, then  $\forall $ x $\in$ S : x R x  \newline
+   \textbf{Not-Symmetric} as  If X is subset of Y, Y could be superset of X.
+   \newline  $\neg$ ($\forall $ X$\forall $Y $|$ (X,Y) $\in$ S $\wedge$ (Y,X) $\in$ S) \newline
+   \textbf{Not-Transitive} \newline 
+   $\neg$ ($\forall$ X,Y,Z $\in$ S $|$ ((X,Y) $\in$ S  $\wedge$ (Y,Z) $\in$ S) $\rightarrow$ (X,Z))
+   \newline 
+   Thus, It is not an equivalence relation.
+   
+   
+  \end{solution} 
+  
 
 \end{parts}
 
 %Long questions (75)
 \question[15] Let $A = f^{-1}(B)$. Prove that $f(A) \subseteq B$.
-  \begin{solution}
+  \begin{solution}\newline
     % Write your solution here
+    For any A  element B such that $B \subseteq f(x). $
+    Then for that B, $f^{-1} (B)$ = $f^{-1}(f(A)) $, since $f^{-1}$ is the inverse of f. 
+    Hence for any element in A there is an element  in B such that $f^{-1}(B) = A.$
+    \newline Proof: \newline
+    $A = f^{-1}(B)$. 
+    \newline Apply function $f$ on both sides \newline
+    $f(A) = f(f^{-1}(B))$. \newline  since $f^{-1}$ is the inverse of f \newline
+    $f(A) = (B)$ which means  $f(A) \subseteq  (B)$
+    
+    
   \end{solution}
 
 \question[15] Consider $[n] = \{1,2,3,...,n\}$ where $n \in \mathbb{N}$. Let $A$ be the set of subsets of $[n]$ that have even size, and let $B$ be the set of subsets of $[n]$ that have odd size. Establish a bijection from $A$ to $B$, thereby proving $|A| = |B|$. (Such a bijection is suggested below for $n = 3$) 
@@ -87,8 +157,27 @@
 \end{tabular}
 \end{center}
 
-  \begin{solution}
+  \begin{solution}\newline
     % Write your solution here
+    $f : \{X \subseteq \{1,..., n\}$ : $|X|$ is $even\}$ $\rightarrow$  $\{X \subseteq \{1, ..., n\}$ : $|X|$ is odd$\}$ \newline
+    and proof that it’s a bijection id given below: \newline
+    (according to whether 1 $\in$ X or 1 not $\in $ X) \newline
+    f $|X|$ = n, then $|f(X)|$ = n + 1 or $|f(X)|$ = n - 1 \newline
+    So, f in fact sends even subsets to odd subsets and for that f must be both surjective and injective. \newline
+    To prove the f is injective, let A and B be two subsets and consider \newline 
+    Suppose that a $\in$ A $\setminus$ B . If  a $\neq$ 1, then \newline
+    a $\in$ f(A) $\setminus$ f(B ), so f(A) $\neq$ f(B) \newline
+    As a result,\newline 
+    f(A) $\neq$ f(B ), so f is injective.\newline
+    f(f(B )) = B , so given   \newline
+    B $\subseteq$ $\{1, . . . , n\}$ with $|B |$ odd, we can take A = f(B) to see that there is some A such that f(A) = B .  \newline
+    We have shown that f is injective and surjective, so f is a bijection   \newline
+    Thus proved that, \newline
+    $|A|=|B|$
+    
+    
+    
+    
   \end{solution}
   
 \question Mushrooms play a vital role in the biosphere of our planet. They also have recreational uses, such as in understanding the mathematical series below. A mushroom number, $M_n$, is a figurate number that can be represented in the form of a mushroom shaped grid of points, such that the number of points is the mushroom number. A mushroom consists of a stem and cap, while its height is the combined height of the two parts. Here is $M_5=23$:
@@ -122,10 +211,29 @@ Study the first five mushrooms carefully and make sure you can draw subsequent o
     \part[15] Derive a closed-form for $M_n$ in terms of $n$.
   \begin{solution}
     % Write your solution here
+    We analyze the Cap width , Cap height and stem height individually. 
+    \newline
+    We make the formulas for each of them separately.
+    \newline \textbf{For the sequence of Cap width with respect to $M_n$ is:}
+    \newline n+1
+    \newline \textbf{For the sequence of Cap height with respect to $M_n$ is:}
+    \newline  $\lfloor\dfrac{n}{2}\rfloor+1-\dfrac{\lfloor\dfrac{n}{2}\rfloor(\lfloor\dfrac{n}{2}\rfloor+1)}{2}$ \newline
+    \textbf{For the sequence of Stem height with respect to $M_n$ is:} 
+    \newline    2(n-1)
+    \newline
+    $M_n = (n+1)(\lfloor\dfrac{n}{2}\rfloor+1-\dfrac{\lfloor\dfrac{n}{2}\rfloor(\lfloor\dfrac{n}{2}\rfloor+1)}{2})+2(n-1)$
+   
+
+
+
   \end{solution}
     \part[5] What is the total height of the $20$th mushroom in the series? 
-  \begin{solution}
-    % Write your solution here
+  \begin{solution}\newline
+    % Write your solution here 
+    Using the formulae in the above part: \newline
+    Stem height = 19 \newline
+    Cap height = 11 \newline
+    Total height is equal to 30. \newline
   \end{solution}
 \end{parts}
 
@@ -152,13 +260,35 @@ The \href{http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fibGen.ht
 \begin{parts}
   \part[10] To begin, prove that the Fibonacci series is countable.
  
-    \begin{solution}
+    \begin{solution} 
+    \newline
+    f2 = f1 + f0 = 1 + 0 = 1, \newline
+    f3 = f2 + f1 = 1 + 1 = 2, \newline
+    f4 = f3 + f2 = 2 + 1 = 3, \newline
+    f5 = f4 + f3 = 3 + 2 = 5, \newline
+    f6 = f5 + f4 = 5 + 3 = 8. \newline
+    A set S is countable iff there exists a bijection between N and S \newline
+    Let a be the largest root of $z^2$ - z - 1 = 0, so a= $(1 + \sqrt(5))/2$ or ratio=1.6180.
+    \newline For every positive Integer x let f(x)=(ax+1/2)
+    \newline We require two lemmas: the first asserts that f(x) is one-to-one,
+    and the second asserts that the iterates of f(x) form a sequence with the Fibonacci property. \newline
+    If F(n-1)+F(n-2)
+    then let it be equal to F(x)+F(y)
+    \newline If x and y are positive integers and x>y , so f(x)$>$f(y). as, a(x-y)$>$1
+    \newline In Fibonacci sequence every natural number occurs exactly once so the series is injective, thus can easily be mapped onto natural numbers, as a result it is surjective as well.
+    \newline
+    Due to this reason the Fibonacci Sequence is Countable as it is Bijective in nature.
+    
     % Write your solution here
   \end{solution}
   \part[15] Consider the Modified Wythoff as any array derived from the original, where each entry of the leading diagonal (marked in blue) of the original 2D-Array is replaced with an integer that does not occur in that row. Prove that the Modified Wythoff Array is countable. 
 
   \begin{solution}
+  
     % Write your solution here
+    The diagonal marked in blue is replaced with an integer which is distinct and is not present in the row and changing the diagonal will change the first element of the first row of the Wythoff array and with respect to that, using the golden ratio 1.618 , all of the sequence is changed and it becomes a new modified array with same properties as the Wythoff array before.\newline
+    Thus proved that, the new Wythoff array is one to one and is also onto sequence.
+    \newline As a result, It is also countable.
   \end{solution}
 \end{parts}
 
